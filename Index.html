@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dynamic Charts Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Charts Generator</h1>
+<br>
+    <form id="inputForm">
+      <input type="text" id="title" placeholder="Chart Title" required>
+      <input type="text" id="labels" placeholder="Labels (comma-separated)" required>
+      <input type="text" id="values" placeholder="Values (comma-separated)" required>
+      <button type="submit">Generate Charts</button>
+    </form>
+
+    <div class="charts-grid">
+      <div class="chart-box large"><canvas id="barChart"></canvas></div>
+      <div class="chart-box small"><canvas id="pieChart"></canvas></div>
+      <div class="chart-box"><canvas id="lineChart"></canvas></div>
+      <div class="chart-box"><canvas id="doughnutChart"></canvas></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
